@@ -1,0 +1,8 @@
+.todo__list-item-text {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+}

@@ -1,0 +1,9 @@
+@keyframes start {
+}
+
+.todo__title {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 20px;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+@keyframes start {
+}
+
+@keyframes end {
+}
+
+.todo__list-item {
+  color: #ffffff;
+  background-color: rgb(217, 198, 234);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
