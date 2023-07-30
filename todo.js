@@ -125,6 +125,8 @@ function togglePopup() {
   popup.classList.toggle("open-popup");
 }
 
+popupCancelBtn.addEventListener("click", togglePopup);
+
 popupCloseBtn.addEventListener("click", togglePopup);
 
 render();
