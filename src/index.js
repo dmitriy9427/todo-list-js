@@ -1,4 +1,4 @@
-import "../src/styles/index.css";
+import "./styles/index.css";
 
 const getElementDom = (element) => {
   return document.querySelector(`.${element}`);
@@ -26,8 +26,9 @@ function render() {
     <label for="checbox" class="todo__list-item-label"></label>
     <span class="todo__list-item-text">${localArr[i]}</span>
     <div class="todo__list-item-svg">
-      <div onClick=editTodoElement(${i})>
+      
     <svg
+    onClick=editTodoElement(${i})
         width="30px"
         height="30px"
         viewBox="0 0 24 24"
@@ -41,9 +42,9 @@ function render() {
           fill="#000000"
         />
       </svg>
-      </div>
+ 
       <svg
-      onclick=
+      onclick=deleteTodoElement(${i})
       width="30px"
       height="30px"
       viewBox="0 0 1024 1024"
