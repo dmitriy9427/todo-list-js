@@ -1,0 +1,6 @@
+.popup-edit__title {
+  color: #6b6666;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 10px;
+}

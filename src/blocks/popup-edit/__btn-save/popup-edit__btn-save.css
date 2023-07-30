@@ -1,0 +1,22 @@
+.popup-edit__btn-save {
+  background-color: rgb(60, 220, 7);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 100px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.popup-edit__btn-save:hover {
+  opacity: 1;
+}
+
+.popup-edit__btn-save:active {
+  background-color: rgb(44, 100, 25);
+}
+
+.popup-edit__btn-save:disabled {
+  opacity: 0.1;
+}

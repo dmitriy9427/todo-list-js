@@ -9,3 +9,10 @@
 @import url(./src/blocks/todo/__list-item-input/todo__list-item-input.css);
 @import url(./src/blocks/todo/__list-item-text/todo__list-item-text.css);
 @import url(./src/blocks/todo/__list-item-label/todo__list-item-label.css);
+@import url(./src/blocks/popup/popup.css);
+@import url(./src/blocks/popup-edit/popup-edit.css);
+@import url(./src/blocks/popup-edit/__title/popup-edit__title.css);
+@import url(./src/blocks/popup-edit/__input/popup-edit__input.css);
+@import url(./src/blocks/popup-edit/__btn-save/popup-edit__btn-save.css);
+@import url(./src/blocks/popup-edit/__btn-cancel/popup-edit__btn-cancel.css);
+@import url(./src/blocks/popup-edit/__btn-close/popup-edit__btn-close.css);

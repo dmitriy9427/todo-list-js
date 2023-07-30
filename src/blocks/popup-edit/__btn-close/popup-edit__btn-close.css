@@ -1,0 +1,8 @@
+.popup-edit__btn-close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background: transparent;
+  border: none;
+  transform: rotate();
+}

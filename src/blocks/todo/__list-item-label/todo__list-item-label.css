@@ -2,6 +2,7 @@
   background-color: aqua;
   width: 15px;
   height: 15px;
+  margin-left: 15px;
 }
 
 .todo__list-item-input:checked + .todo__list-item-label {

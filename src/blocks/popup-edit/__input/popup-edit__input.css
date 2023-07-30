@@ -1,0 +1,5 @@
+.popup-edit__input {
+  display: flex;
+  margin: 0 auto;
+  width: calc(100% - 5%);
+}
