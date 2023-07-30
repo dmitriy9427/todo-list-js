@@ -1,3 +1,5 @@
+import "../src/styles/index.css";
+
 const getElementDom = (element) => {
   return document.querySelector(`.${element}`);
 };
@@ -24,8 +26,8 @@ function render() {
     <label for="checbox" class="todo__list-item-label"></label>
     <span class="todo__list-item-text">${localArr[i]}</span>
     <div class="todo__list-item-svg">
-      <svg
-      onclick=editTodoElement(${i})
+      <div onClick=editTodoElement(${i})>
+    <svg
         width="30px"
         height="30px"
         viewBox="0 0 24 24"
@@ -39,8 +41,9 @@ function render() {
           fill="#000000"
         />
       </svg>
+      </div>
       <svg
-      onclick=deleteTodoElement(${i})
+      onclick=
       width="30px"
       height="30px"
       viewBox="0 0 1024 1024"
@@ -87,10 +90,10 @@ function editTodoElement(index) {
   togglePopup();
   let item = localArr[index];
   if (index !== undefined) {
-    popupSaveBtn.onclick = function (e) {
+    popupSaveBtn.addEventListener("click", function (e) {
       e.preventDefault();
       save(index);
-    };
+    });
     popupInput.value = item;
   }
 }
