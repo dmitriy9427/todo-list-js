@@ -1,5 +1,6 @@
 {
   "name": "todo-list-js",
+  "homepage": "https://dmitriy9427.github.io/todo-list-js/",
   "version": "1.0.0",
   "description": "",
   "main": "todo.js",
@@ -7,5 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitriy Ryabov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "homepage": "^1.0.0"
+  }
 }
