@@ -8,6 +8,9 @@
 @import url(./blocks/todo/__list-item-input/todo__list-item-input.css);
 @import url(./blocks/todo/__list-item-text/todo__list-item-text.css);
 @import url(./blocks/todo/__list-item-label/todo__list-item-label.css);
+@import url(./blocks/todo/__list-item-svg/todo__list-item-svg.css);
+@import url(./blocks/todo/__list-item-edit/todo__list-item-edit.css);
+@import url(./blocks/todo/__list-item-delete/todo__list-item-delete.css);
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup-edit/popup-edit.css);
 @import url(./blocks/popup-edit/__title/popup-edit__title.css);
@@ -20,4 +23,21 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: rgb(104, 45, 147);
+}
+
+.btn {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.6s ease;
+}
+
+.btn:hover {
+  opacity: 1;
 }

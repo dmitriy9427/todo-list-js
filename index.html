@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="./src/styles/index.s -->
+    <!-- <link rel="stylesheet" href="./src/styles/index.css" /> -->
     <title>Todo list</title>
   </head>
   <body>
@@ -21,7 +21,7 @@
       <ul class="todo__list"></ul>
     </div>
     <div class="popup">
-      <div class="popup-edit">
+      <form class="popup-edit">
         <h3 class="popup-edit__title">Введите новое название для задачи</h3>
         <input
           type="text"
@@ -29,8 +29,8 @@
           placeholder="Введите новое название"
         />
         <button type="submit" class="popup-edit__btn-save">Сохранить</button>
-        <button class="popup-edit__btn-cancel">Отменить</button>
-        <button title="Закрыть" class="popup-edit__btn-close">
+        <button type="button" class="popup-edit__btn-cancel">Отменить</button>
+        <button type="button" title="Закрыть" class="popup-edit__btn-close">
           <svg
             width="40px"
             height="40px"
@@ -44,7 +44,7 @@
             />
           </svg>
         </button>
-      </div>
+      </form>
     </div>
     <script src="./src/index.js"></script>
   </body>
