@@ -4,8 +4,8 @@
   cursor: pointer;
   border: none;
   padding: 5px 10px;
-  margin-left: 100px;
   margin-top: 10px;
+  font-size: 14px;
   opacity: 0.8;
 }
 
@@ -19,4 +19,11 @@
 
 .popup-edit__btn-save:disabled {
   opacity: 0.1;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-edit__btn-save {
+    padding: 3px 7px;
+    font-size: 10px;
+  }
 }

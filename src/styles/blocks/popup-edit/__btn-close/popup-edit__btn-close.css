@@ -1,8 +1,14 @@
 .popup-edit__btn-close {
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: -20px;
+  right: -5px;
   background: transparent;
   border: none;
-  transform: rotate();
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-edit__btn-close {
+  }
 }

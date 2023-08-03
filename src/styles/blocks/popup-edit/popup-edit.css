@@ -2,5 +2,6 @@
   position: relative;
   background-color: rgb(235, 235, 235);
   max-width: 400px;
-  height: 100px;
+  padding: 15px;
+  border-radius: 10px;
 }
