@@ -1,3 +1,8 @@
 .todo__form-input {
   width: 100%;
+  border: none;
+}
+
+.todo__form-input::placeholder {
+  opacity: 0.4;
 }

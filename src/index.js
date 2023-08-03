@@ -43,18 +43,18 @@ function render() {
     buttonEdit.addEventListener("click", () => {
       editTodoElement(i);
     });
-    buttonEdit.removeEventListener("click", () => {
-      editTodoElement(i);
-    });
+    // buttonEdit.removeEventListener("click", () => {
+    //   editTodoElement(i);
+    // });
 
     let buttonDelete = createItem("button");
     buttonDelete.className = "btn todo__list-item-delete";
     buttonDelete.addEventListener("click", () => {
       deleteTodoElement(i);
     });
-    buttonDelete.removeEventListener("click", () => {
-      deleteTodoElement(i);
-    });
+    // buttonDelete.removeEventListener("click", () => {
+    //   deleteTodoElement(i);
+    // });
 
     div.append(buttonEdit, buttonDelete);
     li.append(input, span, div);
@@ -76,11 +76,10 @@ function addElement(e) {
 function editTodoElement(index) {
   let item = localArr[index];
   if (index !== undefined) {
-    togglePopup();
+    openPopup();
     popupInput.value = item;
     popupSaveBtn.addEventListener("click", () => {
       localArr[index] = popupInput.value;
-      togglePopup();
       setLocalStorage();
       render();
     });
@@ -95,14 +94,18 @@ function deleteTodoElement(index) {
   render();
 }
 
-todoAddBtn.addEventListener("click", addElement);
-
-function togglePopup() {
-  popup.classList.toggle("open-popup");
+function openPopup() {
+  popup.classList.add("open-popup");
 }
 
-popupCancelBtn.addEventListener("click", togglePopup);
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
 
-popupCloseBtn.addEventListener("click", togglePopup);
+todoAddBtn.addEventListener("click", addElement);
+
+popupCancelBtn.addEventListener("click", closePopup);
+
+popupCloseBtn.addEventListener("click", closePopup);
 
 render();
