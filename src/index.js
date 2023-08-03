@@ -14,6 +14,10 @@ const popupInput = getElementDom("popup-edit__input");
 const popup = getElementDom("popup");
 const localArr = JSON.parse(localStorage.getItem("arr")) || [];
 
+const setLocalStorage = () => {
+  return localStorage.setItem("arr", JSON.stringify(localArr));
+};
+
 function render() {
   todoList.innerHTML = "";
   for (let i = 0; i < localArr.length; i++) {
@@ -27,6 +31,9 @@ function render() {
     let span = createItem("span");
     span.classList.add("todo__list-item-text");
     span.textContent = localArr[i];
+    input.addEventListener("change", () => {
+      span.classList.toggle("done");
+    });
 
     let div = createItem("div");
     div.classList.add("todo__list-item-svg");
@@ -45,6 +52,9 @@ function render() {
     buttonDelete.addEventListener("click", () => {
       deleteTodoElement(i);
     });
+    buttonDelete.removeEventListener("click", () => {
+      deleteTodoElement(i);
+    });
 
     div.append(buttonEdit, buttonDelete);
     li.append(input, span, div);
@@ -59,7 +69,7 @@ function addElement(e) {
     localArr.push(value);
     todoInput.value = "";
   }
-  localStorage.setItem("arr", JSON.stringify(localArr));
+  setLocalStorage();
   render();
 }
 
@@ -71,7 +81,7 @@ function editTodoElement(index) {
     popupSaveBtn.addEventListener("click", () => {
       localArr[index] = popupInput.value;
       togglePopup();
-      localStorage.setItem("arr", JSON.stringify(localArr));
+      setLocalStorage();
       render();
     });
   }
