@@ -13,11 +13,11 @@
 /*!**********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/blocks/todo/__form-input/todo__form-input.css ***!
   \**********************************************************************************************************************************************************************************/
-.todo__form-input{width:100%}
+.todo__form-input{border:none;width:100%}.todo__form-input::-moz-placeholder{opacity:.4}.todo__form-input::placeholder{opacity:.4}
 /*!******************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/blocks/todo/__form-btn/todo__form-btn.css ***!
   \******************************************************************************************************************************************************************************/
-.todo__form-btn{background:#6f6ff6;color:#fff;cursor:pointer}.todo__form-btn:hover{background:#020245}
+.todo__form-btn{background:#6f6ff6;border:none;color:#fff;cursor:pointer;font-size:10px}.todo__form-btn:hover{background:#020245}
 /*!**********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/blocks/todo/__list/todo__list.css ***!
   \**********************************************************************************************************************************************************************/
@@ -25,7 +25,7 @@
 /*!********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/blocks/todo/__list-item/todo__list-item.css ***!
   \********************************************************************************************************************************************************************************/
-.todo__list-item{align-items:center;background-color:#d9c6ea;border-radius:20px;color:#fff;display:flex;flex-direction:row;justify-content:space-between;margin-bottom:10px}
+@keyframes s{0%{transform:scale(0)}to{transform:scale(100%)}}.todo__list-item{align-items:center;background-color:#d9c6ea;border-radius:20px;color:#fff;display:flex;flex-direction:row;justify-content:space-between;margin-bottom:10px}.animation{animation:s 1s ease}
 /*!********************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/blocks/todo/__list-item-input/todo__list-item-input.css ***!
   \********************************************************************************************************************************************************************************************/
